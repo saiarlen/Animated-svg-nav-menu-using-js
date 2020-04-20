@@ -17,6 +17,7 @@
     }
     
     .wr-container {
+        position: relative;
         max-width: 1100px;
         margin: 0 auto;
     }
@@ -73,11 +74,38 @@
         font-size: 18px;
         color: #727272;
     }
+    
+    .slogo {
+        position: absolute;
+        top: 25px;
+        left: -70px;
+    }
+    
+    .slogo img {
+        width: 60%;
+        height: auto;
+    }
+    
+    @media (max-width: 1280px) {
+        .slogo {
+            left: -50px;
+        }
+    }
+    
+    @media (max-width: 1000px) {
+        .slogo {
+            left: 0x;
+        }
+    }
 </style>
 
 <body>
     <div class="wr-container">
         <!-- -------- -->
+        <!-- logo -->
+        <div class="slogo">
+            <img src="slogo.png" alt="logo">
+        </div>
 
         <!-- Home Desktop view SVG Start -->
 
